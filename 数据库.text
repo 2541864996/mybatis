@@ -1,0 +1,9 @@
+建库
+create database mybatis;
+建表
+create table user(id int(20)primary key auto_increment,name varchar(30) not null,pwd varchar(30) not null);
+插入数据
+insert into user values(1,"小茂","123456");
+insert into user values(2,"王二","123456");
+insert into user values(3,"張三","123456");
+insert into user values(4,"李四","123456");
