@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace=绑定一个dao/mapper接口-->
+<mapper namespace="dao.UserMapper">
+
+    <!--id相当于这个map的唯一标识 type为某个类：可以填入设置的类别名-->
+    <resultMap id="UserMap" type="User">
+        <!--property是在类中的名字 column是表中的字段名 将他们两关联起来 查询出来的pwd的值就赋到password上-->
+        <result property="password" column="pwd"/>
+    </resultMap>
+
+
+    <select id="getUserList" resultMap="UserMap">
+        select * from user;
+    </select>
+</mapper>

@@ -193,6 +193,7 @@ public void updateUser(){
 ```
 
 - 删除
+
  1.接口方法
 ```java
 //修改用户
@@ -216,6 +217,7 @@ public void deleteUser(){
 }
 ```
 ###万能的Map
+
 1.接口
 ```java
 //万能的Map
