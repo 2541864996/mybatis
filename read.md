@@ -252,4 +252,22 @@ SqlSession：
 
 
 ###日志
+####日志工厂
+- SLF4J
+- LOG4J【掌握】
+- LOG4J2
+- JDK_LOGGING
+- COMMONS_LOGGING
+- STDOUT_LOGGING【掌握】
+- NO_LOGGING	
+
 如果一个头数据库操作，出现了异常，我们需要排错。日志就是最好的助手
+
+####STDOUT_LOGGING标准日志输出【mybatis-04】
+####Log4j【mybatis-04】
+什么是Log4j？
+- Log4j是Apache的一个开源项目，通过使用Log4j，我们可以控制日志信息输送的目的地是控制台、文件、GUI组件，甚至是套接口服务器、NT的事件记录器、UNIX Syslog守护进程等
+- 我们也可以控制每一条日志的输出格式
+- 通过定义每一条日志信息的级别，我们能够更加细致地控制日志的生成过程
+- 可以通过一个配置文件来灵活地进行配置，而不需要修改应用的代码
+####分页【mybatis-04】
