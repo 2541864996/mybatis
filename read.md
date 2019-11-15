@@ -58,6 +58,47 @@ Github: https://github.com/mybatis/mybatis-3
    5.提供xml标签，支持编写动态sql。
    
 ###使用[mybatis-01]
+###CRUD
+1.select
+```text
+1.接口
+2.mapper.xml中的sql语句
+3.测试
+```
+2.insert
+```text
+1.接口
+2.mapper.xml中的sql语句
+3.测试
+```
+3.update
+```text
+1.接口
+2.mapper.xml中的sql语句
+3.测试
+```
+4.deletc
+```text
+1.接口
+2.mapper.xml中的sql语句
+3.测试
+```
+注意：
+增删改需要提交事务！
+```xml
+qlSession.commit();
+```
+5.万能的Map
+我们实体类.或者数据库中的表，字段或者参数过多,我们可以考虑使用Map
+
+注:
+Map传递参数，直接在sql中取出key即可！【parameterType="map"】
+
+对象传递参数，直接在sql中取对象属性即可！【parameterType="pojo.User"】
+
+只有一个基本类型的参数情况下，直接在sql中取到！【parameterType="int"(也可不写)】
+
+多个参数用Map，或者注解
 
 
 

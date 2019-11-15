@@ -22,7 +22,8 @@
         </environment>
 
     </environments>
+    <!--每一个mapper.xml都需要在Mybatis核心文件中注册-->
     <mappers>
-        <mapper resource="org/mybatis/example/BlogMapper.xml"/>
+        <mapper resource="dao/UserMapper.xml"/>
     </mappers>
 </configuration>
