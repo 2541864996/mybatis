@@ -271,3 +271,19 @@ SqlSession：
 - 通过定义每一条日志信息的级别，我们能够更加细致地控制日志的生成过程
 - 可以通过一个配置文件来灵活地进行配置，而不需要修改应用的代码
 ####分页【mybatis-04】
+####分页插件
+
+![avatar](https://github.com/2541864996/img/blob/master/img/2019-11-15-20-54.png?raw=true);
+
+[插件地址](https://pagehelper.github.io/)
+
+###使用注解开发【mybatis-05】
+```text
+@Select()
+@Update()
+@Insert()
+@Delete()
+```
+
+
+
