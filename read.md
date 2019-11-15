@@ -284,6 +284,44 @@ SqlSession：
 @Insert()
 @Delete()
 ```
+####关于@Param("")注解
+1.基本类型的参数或者String类型，需要加上
+2.引用类型不需要加
+3.如果只有一个基本类型的话，可以忽略，但是建议加上
+4.我们在SQL中引用的就是我们这里@Param()中设定的属性名
+
+#{}和${}区别
+#{}可以防止sql注入
+${}靠拼接来的 容易sql注入
+
+###Lombok
+#####使用步骤
+1.安装idea的Lombok插件
+```text
+File————Settings————Plugins————搜索Lombok————安装
+```
+2.导入jar包
+```xml
+<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.10</version>
+</dependency>
+```
+3.在实体类上加注解
+
+注解说明：
+```java
+@Date：无参构造，get，set，tostring，hashcode，equals
+@AllArgsConstructor 有参构造(加了他无参构造就没了)
+@NoArgsConstructor 无参构造
+@ToString tostring
+@Getter get(放于属性上就是单个属性的get方法 类上就是所有属性都有get)
+@Setter set(放于属性上就是单个属性的set方法 类上就是所有属性都有set)
+@EqualsAndHashCode hashcode.equals
+```
+
 
 
 
