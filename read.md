@@ -322,6 +322,46 @@ File————Settings————Plugins————搜索Lombok————�
 @EqualsAndHashCode hashcode.equals
 ```
 
+###多对一的处理[mybatis-06]
+####嵌套查询
+####关联查询
+
+###一对多的处理【mybatis-07】
+小结：
+
+1.关联 asspciation【多对一】
+
+2.集合 collection【一对多】
+
+3.jiavaType & ofType
+
+    1.javaType 用来指定实体类中属性的类型
+    2.ofType 指定泛型中的约束类型
+    
+注意点:
+
+     1.保证sql的可读性
+     2.注意一对多和多对一，属性和字段的问题
+     3.如果问题不好排查错误，可以使用日志，建议使用log4j
+     
+###动态SQL[mybatis-08]
+什么是动态SQL：动态SQL就是指根据不同的条件生成不同的SQL语句
+
+```xml
+动态SQL元素和JSTL或基于类似XML的文本处理器相似。在MyBatis之前的版本中，有很多元素需要花时间了解。MyBatis3大大精简了元素种类，现在只需学习原来一半的元素便可。MyBatis 采用功能强大的基于 OGNL 的表达式来淘汰其它大部分元素。
+
+if
+choose (when, otherwise)
+trim (where, set)
+foreach
+```
+所谓的动态SQL，本质还是SQL语句，只是我们可以在SQL层面，去执行一个逻辑代码
+ 
+动态SQL就是在拼接SQL语句，我们只要保证SQL的正确性，按照SQL的格式，去排列组合就可以了
+
+建议:
+    先在Mysql中写出完整的SQL，再对应的去修改成为我们的动态SQL实现通用即可
+     
 
 
 
